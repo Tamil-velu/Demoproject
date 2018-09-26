@@ -1,0 +1,17 @@
+<div>
+
+  <button class="btn btn-default" (click)="fileUploader.click()" (change)="fileChange($event.target.files)">
+    Load Image
+    <input type="file" #fileUploader style="display:none" accept="image/*" />
+  </button>
+  <button class="btn btn-default" [disabled]="!img" (click)="drawRotated()">
+    Rotate Image
+  </button>
+  <a class="btn btn-default" [href]="url" (click)="download()" download>
+    Save Image
+  </a>
+  <div class="pad30">
+    <canvas  #imgSrc></canvas>
+
+  </div>
+</div>
