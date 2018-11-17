@@ -38,3 +38,6 @@ export class Task1Component implements OnInit {
   }
 
 }
+
+
+
